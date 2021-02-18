@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Montserrat-Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "MuseoSansCyrl-Medium";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/MuseoSansCyrl-Medium.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-Medium.woff") format("woff");
+}
+/*# sourceMappingURL=style.css.map */

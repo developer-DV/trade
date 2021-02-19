@@ -96,6 +96,7 @@ body {
         text-transform: uppercase;
         background-color: transparent;
         border: 1px solid #000000;
+        outline: none;
         border-radius: 60px;
         cursor: pointer;
         &::after {
@@ -120,7 +121,8 @@ body {
 
 .logo {
     font-family: $museoSansCyrlBold;
-
+    font-size: 15px;
+    line-height: 16px;
     color: $black;
 }
 
@@ -131,14 +133,17 @@ body {
         & + .menu__item {
             margin-left: 32px;
         }
-        &:hover > .menu__list-item {
-            color: $btnHover;
-        }
     }
     &__list-item {
+        font-family: $museoSansCyrlMedium;
+        font-size: 15px;
+        line-height: 16px;
         display: inline-block;
         color: $black;
         transition: all 0.3s ease;
+        &:hover {
+            color: $btnHover;
+        }
     }
 }
 
@@ -480,5 +485,182 @@ body {
         transition: margin-bottom 0.5s ease;
         opacity: 0;
         height: 0;
+    }
+}
+
+// ----- SECTION CONTACTS -----
+
+.contacts {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #6248ff;
+        opacity: 0.1;
+    }
+
+    &__inner {
+        position: relative;
+        padding: 120px 120px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__info {
+        max-width: 483px;
+    }
+    &__headline {
+        margin-bottom: 32px;
+    }
+    &__text-top {
+        p {
+            margin-bottom: 24px;
+            &:last-child {
+                margin-bottom: 48px;
+            }
+        }
+    }
+    &__text-bottom {
+        margin-bottom: 24px;
+        font-size: 16px;
+        line-height: 27px;
+    }
+
+    &__phone,
+    &__email,
+    &__address {
+        font-family: $museoSansCyrlMedium;
+        margin-bottom: 16px;
+        font-size: 15px;
+        line-height: 16px;
+        color: $black;
+        a {
+            display: block;
+            margin-top: 8px;
+            font-family: $montserrat;
+            font-size: 16px;
+            line-height: 27px;
+            color: $textColor;
+        }
+    }
+    &__address {
+        margin-bottom: 0px;
+    }
+    &__form {
+        text-align: center;
+        max-width: 585px;
+        padding: 78px;
+        border: 2px solid $accent;
+        border-radius: 20px;
+    }
+    &__form-element {
+        display: block;
+        padding: 5px 14px;
+        width: 425px;
+        border-radius: 3px;
+        border: 2px solid $btnDisabled;
+        outline: none;
+        font-size: 16px;
+        line-height: 26px;
+        color: $textColor;
+        &::placeholder {
+            color: #828282;
+        }
+        & + .contacts__form-element {
+            margin-top: 24px;
+        }
+        &:focus {
+            border: 2px solid #828282;
+        }
+    }
+    &__form-textarea {
+        min-height: 89px;
+        resize: none;
+    }
+    &__form-btn {
+        margin-top: 40px;
+        padding: 20px 64px;
+    }
+}
+
+// ----- FOOTER -----
+
+.footer {
+    &__inner {
+        padding: 32px 120px 72px;
+    }
+
+    &__top {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin-bottom: 48px;
+    }
+
+    &__logo {
+        margin-right: 160px;
+        color: #000000;
+    }
+
+    &__box {
+        max-width: 380px;
+        & + .footer__box {
+            margin-left: 30px;
+        }
+    }
+
+    &__box-title {
+        margin-bottom: 16px;
+        font-family: $museoSansCyrlMedium;
+        color: $black;
+    }
+
+    &__box-text {
+        font-size: 16px;
+        line-height: 27px;
+    }
+
+    &__menu {
+        margin-left: 98px;
+    }
+
+    &__menu-item {
+        display: block;
+        margin-left: 0;
+        line-height: 0;
+        & + .footer__menu-item {
+            margin-left: 0;
+            margin-top: 27px;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16px;
+        line-height: 27px;
+    }
+
+    &__copy {
+    }
+
+    &__info {
+        display: flex;
+    }
+
+    &__info-item {
+        display: inline-block;
+        & + .footer__info-item {
+            margin-left: 66px;
+        }
+    }
+
+    &__info-link {
+        color: $textColor;
     }
 }

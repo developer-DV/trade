@@ -126,6 +126,7 @@ body {
   text-transform: uppercase;
   background-color: transparent;
   border: 1px solid #000000;
+  outline: none;
   border-radius: 60px;
   cursor: pointer;
 }
@@ -151,6 +152,8 @@ body {
 
 .logo {
   font-family: "MuseoSansCyrl-Bold";
+  font-size: 15px;
+  line-height: 16px;
   color: #333333;
 }
 
@@ -166,15 +169,18 @@ body {
   margin-left: 32px;
 }
 
-.menu__item:hover > .menu__list-item {
-  color: #7181fc;
-}
-
 .menu__list-item {
+  font-family: "MuseoSansCyrl-Medium";
+  font-size: 15px;
+  line-height: 16px;
   display: inline-block;
   color: #333333;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+.menu__list-item:hover {
+  color: #7181fc;
 }
 
 .main {
@@ -558,5 +564,219 @@ body {
   transition: margin-bottom 0.5s ease;
   opacity: 0;
   height: 0;
+}
+
+.contacts {
+  position: relative;
+}
+
+.contacts::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #6248ff;
+  opacity: 0.1;
+}
+
+.contacts__inner {
+  position: relative;
+  padding: 120px 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contacts__info {
+  max-width: 483px;
+}
+
+.contacts__headline {
+  margin-bottom: 32px;
+}
+
+.contacts__text-top p {
+  margin-bottom: 24px;
+}
+
+.contacts__text-top p:last-child {
+  margin-bottom: 48px;
+}
+
+.contacts__text-bottom {
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.contacts__phone, .contacts__email, .contacts__address {
+  font-family: "MuseoSansCyrl-Medium";
+  margin-bottom: 16px;
+  font-size: 15px;
+  line-height: 16px;
+  color: #333333;
+}
+
+.contacts__phone a, .contacts__email a, .contacts__address a {
+  display: block;
+  margin-top: 8px;
+  font-family: "Montserrat-Regular";
+  font-size: 16px;
+  line-height: 27px;
+  color: #4f4f4f;
+}
+
+.contacts__address {
+  margin-bottom: 0px;
+}
+
+.contacts__form {
+  text-align: center;
+  max-width: 585px;
+  padding: 78px;
+  border: 2px solid #6248ff;
+  border-radius: 20px;
+}
+
+.contacts__form-element {
+  display: block;
+  padding: 5px 14px;
+  width: 425px;
+  border-radius: 3px;
+  border: 2px solid #e0e0e0;
+  outline: none;
+  font-size: 16px;
+  line-height: 26px;
+  color: #4f4f4f;
+}
+
+.contacts__form-element::-webkit-input-placeholder {
+  color: #828282;
+}
+
+.contacts__form-element:-ms-input-placeholder {
+  color: #828282;
+}
+
+.contacts__form-element::-ms-input-placeholder {
+  color: #828282;
+}
+
+.contacts__form-element::placeholder {
+  color: #828282;
+}
+
+.contacts__form-element + .contacts__form-element {
+  margin-top: 24px;
+}
+
+.contacts__form-element:focus {
+  border: 2px solid #828282;
+}
+
+.contacts__form-textarea {
+  min-height: 89px;
+  resize: none;
+}
+
+.contacts__form-btn {
+  margin-top: 40px;
+  padding: 20px 64px;
+}
+
+.footer__inner {
+  padding: 32px 120px 72px;
+}
+
+.footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 48px;
+}
+
+.footer__logo {
+  margin-right: 160px;
+  color: #000000;
+}
+
+.footer__box {
+  max-width: 380px;
+}
+
+.footer__box + .footer__box {
+  margin-left: 30px;
+}
+
+.footer__box-title {
+  margin-bottom: 16px;
+  font-family: "MuseoSansCyrl-Medium";
+  color: #333333;
+}
+
+.footer__box-text {
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.footer__menu {
+  margin-left: 98px;
+}
+
+.footer__menu-item {
+  display: block;
+  margin-left: 0;
+  line-height: 0;
+}
+
+.footer__menu-item + .footer__menu-item {
+  margin-left: 0;
+  margin-top: 27px;
+}
+
+.footer__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.footer__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__info-item {
+  display: inline-block;
+}
+
+.footer__info-item + .footer__info-item {
+  margin-left: 66px;
+}
+
+.footer__info-link {
+  color: #4f4f4f;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,2 +1,484 @@
 @import "vars";
 @import "fonts";
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: $white;
+    font-family: $montserrat;
+    font-size: 18px;
+    line-height: 30px;
+    color: $textColor;
+}
+
+.btn {
+    display: inline-block;
+    font-family: $museoSansCyrlMedium;
+    font-size: 16px;
+    line-height: 14px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 60px;
+    color: $white;
+    outline: none;
+    background-color: $accent;
+    transition: all 0.3s ease;
+    &:hover {
+        background-color: $btnHover;
+    }
+    &:active {
+        background-color: $btnActive;
+    }
+}
+
+// ----- Header -----
+
+.header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    background-color: $white;
+    &__inner {
+        padding: 20px 60px 20px 120px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: $museoSansCyrlMedium;
+        font-size: 15px;
+        line-height: 16px;
+    }
+
+    &__items {
+        margin-left: auto;
+    }
+    &__lang {
+        position: relative;
+        padding: 11px 43px 11px 15px;
+        font-size: 15px;
+        line-height: 16px;
+        text-transform: uppercase;
+        background-color: transparent;
+        border: 1px solid #000000;
+        border-radius: 60px;
+        cursor: pointer;
+        &::after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            top: 17px;
+            right: 17px;
+            width: 10px;
+            height: 6px;
+            background-image: url(../images/arrow-down.svg);
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+    }
+    &__btn {
+        margin-left: 24px;
+        padding: 13px 24px;
+        font-size: 14px;
+    }
+}
+
+.logo {
+    font-family: $museoSansCyrlBold;
+
+    color: $black;
+}
+
+.menu {
+    margin-left: 57px;
+    &__item {
+        display: inline-block;
+        & + .menu__item {
+            margin-left: 32px;
+        }
+        &:hover > .menu__list-item {
+            color: $btnHover;
+        }
+    }
+    &__list-item {
+        display: inline-block;
+        color: $black;
+        transition: all 0.3s ease;
+    }
+}
+
+// ----- SECTION MAIN -----
+
+.main {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #6248ff;
+        opacity: 0.1;
+    }
+    &__inner {
+        position: relative;
+        padding: 180px 120px 101px 120px;
+        display: flex;
+    }
+    &__content {
+        width: 50%;
+    }
+    &__title {
+        font-family: $museoSansCyrlMedium;
+        padding-top: 39px;
+        margin-bottom: 39px;
+        font-size: 64px;
+        line-height: 72px;
+    }
+    &__text {
+        max-width: 483px;
+        margin-bottom: 48px;
+    }
+    &__btn {
+        padding: 20px 64px;
+        letter-spacing: 0.03em;
+    }
+
+    &__image {
+        width: 50%;
+        text-align: right;
+        line-height: 0;
+    }
+}
+
+// ----- SECTION START -----
+
+.headline {
+    max-width: 483px;
+    font-family: $museoSansCyrlMedium;
+    font-size: 56px;
+    line-height: 66px;
+    color: $black;
+    span {
+        display: inline-block;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            display: block;
+            height: 76px;
+            background-color: #6248ff;
+            opacity: 0.1;
+        }
+    }
+}
+
+.start {
+    &__inner {
+        padding: 140px 120px 80px 120px;
+    }
+    &__headline {
+        margin-bottom: 68px;
+        span {
+            &::before {
+                width: 296px;
+            }
+        }
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item {
+        margin-bottom: 105px;
+        &:nth-child(even) {
+            margin-left: 132px;
+        }
+        &:nth-child(2) {
+            transform: translateY(170px);
+        }
+        &:nth-child(4) {
+            transform: translateY(185px);
+        }
+    }
+    &__item-box {
+        max-width: 483px;
+        padding: 31px;
+        border: 2px solid $accent;
+        border-radius: 30px;
+        background-color: $white;
+    }
+    &__item-box-1,
+    &__item-box-2,
+    &__item-box-3 {
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            width: 371px;
+            height: 67px;
+            border: 3px dashed #6248ff;
+            border-bottom: none;
+        }
+    }
+    &__item-box-1::after {
+        border-left: none;
+        border-top-right-radius: 30px;
+        top: 50%;
+        left: 100%;
+    }
+    &__item-box-2::after {
+        border-right: none;
+        border-top-left-radius: 30px;
+        top: 50%;
+        right: 100%;
+    }
+    &__item-box-3::after {
+        border-left: none;
+        border-top-right-radius: 30px;
+        top: 50%;
+        left: 100%;
+    }
+    &__num {
+        margin-bottom: 8px;
+        font-family: $museoSansCyrlMedium;
+        font-size: 15px;
+        line-height: 18px;
+        color: $accent;
+    }
+    &__title {
+        margin-bottom: 24px;
+        font-family: $museoSansCyrlMedium;
+        font-size: 24px;
+        line-height: 29px;
+        color: $black;
+    }
+}
+
+// ----- SECTION REVIEW -----
+
+.review {
+    &__inner {
+        padding: 140px 120px 0 120px;
+        display: flex;
+    }
+    &__left {
+        flex: 1 0 483px;
+        margin-right: 84px;
+    }
+    &__headline {
+        margin-bottom: 39px;
+        span {
+            &::before {
+                width: 355px;
+            }
+        }
+    }
+    &__slider {
+        max-width: 636px;
+        outline: none;
+    }
+
+    &__slider-item {
+        outline: none;
+        padding-left: 48px;
+    }
+
+    &__slider-top {
+        display: flex;
+        align-items: center;
+        margin-bottom: 17px;
+    }
+
+    &__slider-image {
+        width: 73px;
+        height: 73px;
+    }
+
+    &__slide-info {
+        margin-left: 30px;
+    }
+
+    &__slider-name {
+        color: $black;
+    }
+
+    &__slider-position {
+        font-size: 16px;
+        line-height: 27px;
+    }
+
+    &__slider-text {
+        font-family: $museoSansCyrlMedium;
+        font-size: 24px;
+        line-height: 29px;
+        color: $black;
+        margin-bottom: 31px;
+        position: relative;
+        &::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            left: -48px;
+            width: 33px;
+            height: 27px;
+            background-image: url(/images/quotes.png);
+            background-position: center center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+    &__slider-num {
+        font-family: $museoSansCyrlMedium;
+        font-size: 15px;
+        line-height: 18px;
+        color: $accent;
+    }
+}
+
+.slider-btn {
+    position: absolute;
+    top: 160px;
+    left: -568px;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    outline: none;
+    border: 1px solid $accent;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    &.slick-disabled {
+        border: 1px solid $btnDisabled;
+        cursor: auto;
+        &:hover {
+            border: 1px solid $btnDisabled;
+        }
+    }
+    &:hover {
+        border: 1px solid $btnHover;
+    }
+    &:active {
+        border: 1px solid $btnActive;
+    }
+}
+.slider-btn__right {
+    margin-left: 64px;
+}
+
+// ----- SECTION QUESTIONS -----
+
+.questions {
+    &__inner {
+        padding: 140px 120px;
+    }
+
+    &__headline {
+        margin-bottom: 68px;
+        span {
+            &::before {
+                width: 263px;
+            }
+        }
+    }
+
+    &__items {
+        max-width: 995px;
+        margin: 0 auto;
+    }
+
+    &__item {
+        border: 2px solid $accent;
+        border-radius: 20px;
+        & + .questions__item {
+            margin-top: 16px;
+        }
+        &.questions__item--active {
+            .questions__item-title {
+                padding-bottom: 24px;
+                &::after {
+                    transform: rotate(45deg);
+                }
+            }
+            .questions__item-text {
+                margin-bottom: 32px;
+                opacity: 1;
+                height: auto;
+            }
+        }
+    }
+
+    &__item-title {
+        cursor: pointer;
+        padding: 32px 80px 32px 40px;
+        font-family: $museoSansCyrlMedium;
+        font-size: 24px;
+        line-height: 29px;
+        color: $black;
+        position: relative;
+        transition: 0.5s ease;
+        &::after {
+            content: url(../images/plus.svg);
+            position: absolute;
+            top: 39px;
+            right: 47px;
+            width: 19px;
+            height: 19px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+    }
+
+    &__item-text {
+        max-width: 750px;
+        margin: 0px 0px 0px 40px;
+        font-size: 16px;
+        line-height: 27px;
+        transition: margin-bottom 0.5s ease;
+        opacity: 0;
+        height: 0;
+    }
+}

@@ -13,3 +13,11 @@
     src: url("../fonts/MuseoSansCyrl-Medium.woff2") format("woff2"),
         url("../fonts/MuseoSansCyrl-Medium.woff") format("woff");
 }
+
+@font-face {
+    font-family: "MuseoSansCyrl-Bold";
+    font-weight: 700;
+    font-style: normal;
+    src: url("../fonts/MuseoSansCyrl-Bold.woff2") format("woff2"),
+        url("../fonts/MuseoSansCyrl-Bold.woff") format("woff");
+}

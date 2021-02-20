@@ -710,6 +710,25 @@ body {
   padding: 20px 64px;
 }
 
+.contacts__form-error {
+  border-color: #eb5757;
+}
+
+.contacts__form-valide {
+  border-color: #0eac00;
+}
+
+.contacts__error-message {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  text-align: left;
+  font-family: "MuseoSansCyrl-Medium";
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #eb5757;
+}
+
 .footer__inner {
   padding: 32px 120px 72px;
 }

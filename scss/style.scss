@@ -584,6 +584,22 @@ body {
         margin-top: 40px;
         padding: 20px 64px;
     }
+    &__form-error {
+        border-color: #eb5757;
+    }
+    &__form-valide {
+        border-color: #0eac00;
+    }
+    &__error-message {
+        margin-top: 8px;
+        margin-bottom: 8px;
+        text-align: left;
+        font-family: $museoSansCyrlMedium;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 16px;
+        color: #eb5757;
+    }
 }
 
 // ----- FOOTER -----

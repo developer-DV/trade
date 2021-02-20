@@ -18,6 +18,11 @@ $(function () {
         }
     })
 
+
+    $('.menu__btn').on('click', function () {
+        $(this).next().toggleClass('menu__list--active')
+    })
+
 });
 
 

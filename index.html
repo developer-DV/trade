@@ -18,6 +18,9 @@
             <div class="header__inner">
                 <a class="logo" href="#">LOGO</a>
                 <nav class="menu">
+                    <button class="menu__btn">
+                        <span class="menu__btn-span menu__btn--active"></span>
+                    </button>
                     <ul class="menu__list">
                         <li class="menu__item"><a class="menu__list-item" href="#">How it works</a></li>
                         <li class="menu__item"><a class="menu__list-item" href="#">About</a></li>
@@ -29,7 +32,13 @@
                 </nav>
                 <div class="header__items">
                     <button class="header__lang">EN</button>
-                    <a href="#" class="header__btn btn">Sign in for free</a>
+                    <a class="header__btn btn" data-fancybox data-src="#sign-modal" href="javascript:;">Sign
+                        in for free
+                    </a>
+                    <div id="sign-modal">
+                        <h2>Hello user!</h2>
+                        <p>You need to register!</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -113,11 +122,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="review__slider-text">
-                            <p>This magical product actually works! It has radically changed the way we build our
-                                audiences.</p>
-                            <p> Increasing new customer sales by 6x in our most mature market.</p>
-                        </div>
+                        <p class="review__slider-text">
+                            This magical product actually works! It has radically changed the
+                            way we build our audiences.<br />Increasing new customer sales by 6x in our most mature
+                            market.
+                        </p>
                         <div class="review__slider-num">
                             01 / 04
                         </div>
@@ -136,11 +145,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="review__slider-text">
-                            <p>This magical product actually works! It has radically changed the way we build our
-                                audiences.</p>
-                            <p> Increasing new customer sales by 6x in our most mature market.</p>
-                        </div>
+                        <p class="review__slider-text">
+                            This magical product actually works! It has radically changed the
+                            way we build our audiences.<br />Increasing new customer sales by 6x in our most mature
+                            market.
+                        </p>
                         <div class="review__slider-num">
                             02 / 04
                         </div>
@@ -159,11 +168,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="review__slider-text">
-                            <p>This magical product actually works! It has radically changed the way we build our
-                                audiences.</p>
-                            <p> Increasing new customer sales by 6x in our most mature market.</p>
-                        </div>
+                        <p class="review__slider-text">
+                            This magical product actually works! It has radically changed the
+                            way we build our audiences.<br />Increasing new customer sales by 6x in our most mature
+                            market.
+                        </p>
                         <div class="review__slider-num">
                             03 / 04
                         </div>
@@ -182,11 +191,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="review__slider-text">
-                            <p>This magical product actually works! It has radically changed the way we build our
-                                audiences.</p>
-                            <p> Increasing new customer sales by 6x in our most mature market.</p>
-                        </div>
+                        <p class="review__slider-text">
+                            This magical product actually works! It has radically changed the
+                            way we build our audiences.<br />Increasing new customer sales by 6x in our most mature
+                            market.
+                        </p>
                         <div class="review__slider-num">
                             04 / 04
                         </div>
@@ -328,25 +337,25 @@
                             Ltd
                             operating under brand and using domenLink domain within the European Economic Area.</p>
                     </div>
-                    <nav class="menu footer__menu">
-                        <ul class="menu__list">
-                            <li class="menu__item footer__menu-item">
-                                <a class="menu__list-item" href="#">About us</a>
+                    <nav class="footer__menu">
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="#">About us</a>
                             </li>
-                            <li class="menu__item footer__menu-item">
-                                <a class="menu__list-item" href="#">Instructions</a>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="#">Instructions</a>
                             </li>
-                            <li class="menu__item footer__menu-item">
-                                <a class="menu__list-item" href="#">Platforms</a>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="#">Platforms</a>
                             </li>
-                            <li class="menu__item footer__menu-item">
-                                <a class="menu__list-item" href="#">Contact Us</a>
+                            <li class="footer__menu-item footer__menu-list-item">
+                                <a class="footer__menu-link" href="#">Contact Us</a>
                             </li>
-                            <li class="menu__item footer__menu-item">
-                                <a class="menu__list-item" href="#">Sign in</a>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="#">Sign in</a>
                             </li>
-                            <li class="menu__item footer__menu-item">
-                                <a class="menu__list-item" href="#">Sign up for free</a>
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="#">Sign up for free</a>
                             </li>
                         </ul>
                     </nav>

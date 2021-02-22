@@ -1,0 +1,757 @@
+@media (max-width: 1350px) {
+    // ----- SECTION MAIN -----
+    .main {
+        &__inner {
+            padding-right: 60px;
+        }
+        &__content {
+            width: 60%;
+        }
+        &__image {
+            max-width: 418px;
+        }
+    }
+
+    // ----- SECTION START -----
+    .start {
+        &__items {
+            justify-content: center;
+        }
+        &__item-box {
+            max-width: 400px;
+        }
+        &__item-box-1,
+        &__item-box-2,
+        &__item-box-3 {
+            &::after {
+                width: 332px;
+            }
+        }
+    }
+
+    // ----- SECTION REVIEW -----
+    .review {
+        &__inner {
+            padding-right: 60px;
+        }
+        &__slider {
+            max-width: 600px;
+        }
+    }
+
+    // ----- SECTION CONTACTS -----
+    .contacts {
+        &__info {
+            max-width: 420px;
+        }
+        &__form {
+            padding: 78px 40px;
+        }
+    }
+
+    // ----- FOOTER -----
+    .footer {
+        &__inner {
+            padding-top: 62px;
+            padding-bottom: 48px;
+        }
+        &__top {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        &__logo {
+            margin-right: 0;
+            margin-bottom: 54px;
+        }
+        &__box {
+            order: 1;
+            max-width: 700px;
+            & + .footer__box {
+                margin-top: 32px;
+                margin-left: 0px;
+            }
+        }
+        &__box-title {
+            text-align: center;
+        }
+        &__menu {
+            width: 100%;
+            margin-left: 0;
+            margin-bottom: 40px;
+        }
+        &__menu-list {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__menu-item {
+            & + .footer__menu-item {
+                margin-top: 0px;
+            }
+        }
+        &__bottom {
+            flex-direction: column;
+        }
+        &__copy {
+            margin-bottom: 32px;
+        }
+        &__info {
+            width: 100%;
+            justify-content: space-between;
+        }
+        &__info-item {
+            & + .footer__info-item {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    // ----- Header -----
+    .menu {
+        margin-left: 35px;
+        &__item {
+            & + .menu__item {
+                margin-left: 20px;
+            }
+        }
+    }
+    // ----- SECTION MAIN -----
+    .main {
+        &__inner {
+            padding: 120px 40px 28px;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__content {
+            width: 100%;
+            text-align: center;
+        }
+        &__title {
+            max-width: 688px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__text {
+            max-width: 510px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__image {
+            width: 100%;
+            margin-top: 32px;
+        }
+    }
+    // ----- SECTION START -----
+    .start {
+        &__inner {
+            padding: 120px 40px;
+        }
+        &__item-box {
+            max-width: 350px;
+        }
+        &__item-box-1,
+        &__item-box-2,
+        &__item-box-3 {
+            &::after {
+                width: 300px;
+            }
+        }
+    }
+
+    // ----- SECTION REVIEW -----
+    .review {
+        &__inner {
+            padding: 120px 40px 0px 40px;
+        }
+        &__slider {
+            max-width: 580px;
+        }
+        &__headline {
+            span {
+                &::before {
+                    width: 168px;
+                }
+            }
+        }
+    }
+
+    .slider-btn {
+        top: 291px;
+        left: 40px;
+    }
+
+    // ----- SECTION QUESTIONS -----
+    .questions {
+        &__inner {
+            padding: 120px 40px;
+        }
+    }
+
+    // ----- SECTION CONTACTS -----
+    .contacts {
+        &__inner {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__info {
+            max-width: 509px;
+            margin-bottom: 48px;
+        }
+        &__form {
+            padding: 78px 40px;
+        }
+    }
+
+    // ----- FOOTER -----
+    .footer {
+        &__inner {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    // ----- Header -----
+    .header {
+        &__inner {
+            padding-left: 43px;
+            padding-right: 43px;
+        }
+    }
+
+    // ----- SECTION REVIEW -----
+    .review {
+        &__slider {
+            max-width: 509px;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    // ----- Header -----
+    .menu {
+        margin-left: 51px;
+        order: 1;
+        &__btn {
+            display: block;
+            width: 18px;
+            height: 12px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            position: relative;
+            &-span {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -1px;
+                margin-left: -9px;
+                width: 18px;
+                height: 2px;
+                background-color: $black;
+                &::before,
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    margin-top: -1px;
+                    margin-left: -9px;
+                    width: 18px;
+                    height: 2px;
+                    background-color: $black;
+                    transition: 0.5s ease;
+                }
+                &::before {
+                    transform: translateY(-5px);
+                }
+                &::after {
+                    transform: translateY(5px);
+                }
+                &--active {
+                    height: 0;
+                    &::before {
+                        transform: rotate(45deg);
+                    }
+                    &::after {
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+        }
+        &__list {
+            position: absolute;
+            top: 80px;
+            right: 0px;
+            width: 100%;
+            padding: 40px 40px;
+            transform: translateX(1100px);
+            background-color: rgba($accent, 1);
+            transition: 0.5s ease;
+            &.menu__list--active {
+                transform: translateX(0px);
+                .menu__item {
+                    opacity: 1;
+                }
+            }
+        }
+        &__item {
+            display: block;
+            text-align: right;
+            opacity: 0;
+            transition: 1s ease;
+            & + .menu__item {
+                margin-left: 0px;
+                margin-top: 40px;
+            }
+        }
+        &__list-item {
+            color: $white;
+        }
+    }
+
+    // ----- SECTION START -----
+    .start {
+        &__inner {
+            padding-bottom: 82px;
+        }
+        &__headline {
+            margin-bottom: 56px;
+        }
+        &__item {
+            &:nth-child(even) {
+                margin-left: 30px;
+            }
+        }
+        &__item-box {
+            max-width: 325px;
+        }
+        &__item-box-1,
+        &__item-box-2,
+        &__item-box-3 {
+            &::after {
+                width: 193px;
+            }
+        }
+    }
+
+    // ----- SECTION REVIEW -----
+    .review {
+        &__inner {
+            flex-direction: column;
+        }
+        &__headline {
+            margin-bottom: 40px;
+        }
+        &__slider {
+            align-self: center;
+        }
+        &__slider-item {
+            padding-left: 0px;
+        }
+        &__slider-top {
+            flex-direction: column;
+            margin-bottom: 59px;
+        }
+        &__slider-image {
+            margin-bottom: 10px;
+        }
+        &__slide-info {
+            text-align: center;
+            margin-left: 0;
+        }
+        &__slider-text {
+            text-align: center;
+            margin-bottom: 32px;
+            &::before {
+                top: -43px;
+                left: 238px;
+            }
+            br {
+                display: none;
+            }
+        }
+        &__slider-num {
+            text-align: center;
+        }
+    }
+
+    .slider-btn {
+        top: 448px;
+        left: 40px;
+    }
+
+    .slider-btn__right {
+        left: auto;
+        right: 40px;
+        margin-left: 0;
+    }
+
+    // ----- SECTION QUESTIONS -----
+    .questions {
+        &__headline {
+            margin-bottom: 56px;
+        }
+        &__item-text {
+            max-width: 558px;
+        }
+    }
+
+    // ----- SECTION CONTACTS -----
+    .contacts {
+        &__inner {
+            padding: 48px 20px;
+        }
+    }
+
+    // ----- FOOTER -----
+    .footer {
+        &__box {
+            max-width: 509px;
+        }
+        &__info {
+            flex-direction: column;
+            text-align: center;
+        }
+        &__copy {
+            margin-bottom: 16px;
+        }
+        &__info-item {
+            & + .footer__info-item {
+                margin-top: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    // ----- Header -----
+    .header {
+        &__lang {
+            display: none;
+        }
+    }
+
+    // ----- SECTION MAIN -----
+    .main {
+        &__title {
+            margin-bottom: 39px;
+            padding-top: 0;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    // ----- SECTION START -----
+    .start {
+        &__inner {
+            padding-bottom: 0;
+        }
+        &__items {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+        &__headline {
+            margin-bottom: 56px;
+        }
+        &__item {
+            margin-bottom: 0px;
+            & + .start__item {
+                margin-top: 24px;
+            }
+            &:nth-child(even) {
+                margin-left: 0px;
+            }
+            &:nth-child(2) {
+                transform: translateY(0px);
+            }
+            &:nth-child(4) {
+                transform: translateY(0px);
+            }
+        }
+        &__item-box {
+            max-width: none;
+        }
+        &__item-box-1,
+        &__item-box-2,
+        &__item-box-3 {
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    // ----- SECTION QUESTIONS -----
+    .questions {
+        &__item-text {
+            margin-right: 80px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    // ----- SECTION REVIEW -----
+    .review {
+        &__slider-num {
+            padding-bottom: 15px;
+        }
+    }
+    .slider-btn {
+        top: auto;
+        bottom: 0;
+    }
+}
+
+@media (max-width: 650px) {
+    // ----- SECTION MAIN -----
+    .main {
+        &__content {
+            text-align: left;
+        }
+        &__title {
+            margin-bottom: 24px;
+        }
+        &__text {
+            max-width: none;
+            margin: 0 0 32px 0;
+        }
+        &__image {
+            margin-top: 53px;
+        }
+        &__btn {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    // ----- SECTION REVIEW -----
+    .review {
+        &__slider {
+            width: 400px;
+        }
+        &__slider-text {
+            &::before {
+                left: 184px;
+            }
+        }
+    }
+
+    // ----- SECTION QUESTIONS -----
+    .questions {
+        &__item-title {
+            padding: 24px 75px 24px 16px;
+            font-size: 18px;
+            line-height: 21px;
+            &::after {
+                top: 26px;
+                right: 23px;
+            }
+        }
+        &__item {
+            &.questions__item--active {
+                .questions__item-title {
+                    padding-bottom: 24px;
+                }
+                .questions__item-text {
+                    margin-bottom: 24px;
+                }
+            }
+        }
+        &__item-text {
+            margin: 0 24px 0 16px;
+        }
+    }
+
+    // ----- SECTION CONTACTS -----
+    .contacts {
+        &__info {
+            max-width: 332px;
+        }
+        &__headline {
+            margin-bottom: 24px;
+        }
+        &__text-top {
+            p {
+                &:last-child {
+                    margin-bottom: 24px;
+                }
+            }
+        }
+        &__text-bottom {
+            margin-bottom: 17px;
+        }
+        &__form-element {
+            width: 248px;
+        }
+    }
+
+    // ----- FOOTER -----
+    .footer {
+        &__top {
+            margin-bottom: 32px;
+        }
+        &__logo {
+            margin-bottom: 46px;
+        }
+        &__menu-list {
+            flex-direction: column;
+            text-align: center;
+        }
+        &__menu {
+            margin-bottom: 32px;
+        }
+        &__menu-item {
+            & + .footer__menu-item {
+                margin-top: 32px;
+            }
+        }
+        &__box {
+            & + .footer__box {
+                margin-top: 24px;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .headline {
+        max-width: 278px;
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+    // ----- SECTION MAIN -----
+    .main {
+        &__title {
+            font-size: 40px;
+            line-height: 44px;
+        }
+    }
+
+    // ----- SECTION START -----
+    .start {
+        &__headline {
+            span {
+                &::before {
+                    width: 214px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+
+    // ----- SECTION REVIEW -----
+    .review {
+        &__headline {
+            span {
+                &::before {
+                    width: 200px;
+                    height: 50px;
+                }
+            }
+        }
+        &__slider {
+            width: 280px;
+        }
+        &__slider-text {
+            &::before {
+                left: 124px;
+            }
+        }
+    }
+    // ----- SECTION QUESTIONS -----
+    .questions {
+        &__headline {
+            margin-bottom: 40px;
+            span {
+                &::before {
+                    width: 195px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    // ----- Header -----
+
+    .header {
+        &__inner {
+            padding: 30px 23px 34px 20px;
+        }
+        &__btn {
+            display: none;
+        }
+    }
+
+    .menu {
+        &__list {
+            padding-right: 20px;
+        }
+    }
+
+    // ----- SECTION MAIN -----
+    .main {
+        &__inner {
+            padding: 112px 20px 39px 20px;
+        }
+    }
+
+    // ----- SECTION START -----
+    .start {
+        &__inner {
+            padding: 80px 20px 0;
+        }
+        &__headline {
+            margin-bottom: 40px;
+        }
+    }
+
+    // ----- SECTION REVIEW -----
+    .review {
+        &__inner {
+            padding: 80px 20px 0;
+        }
+        &__slider-top {
+            margin-bottom: 75px;
+        }
+        &__slider-image {
+            margin-bottom: 8px;
+        }
+        &__slider-text {
+            margin-bottom: 39px;
+            &::before {
+                top: -51px;
+            }
+        }
+    }
+
+    // ----- SECTION QUESTIONS -----
+    .questions {
+        &__inner {
+            padding: 80px 20px;
+        }
+    }
+
+    // ----- SECTION CONTACTS -----
+    .contacts {
+        &__form {
+            padding: 48px 16px;
+        }
+    }
+
+    // ----- FOOTER -----
+    .footer {
+        &__inner {
+            padding: 46px 20px 32px;
+        }
+        &__menu-list {
+            text-align: left;
+        }
+    }
+}
